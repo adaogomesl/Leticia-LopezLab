@@ -79,7 +79,7 @@ rm -r $MOLCAS_PROJECT
 Check .log and .status should have ```Happy landing!```
 
 --- 
-# 2. Single-point CASSCF - Generate CAS
+# 2. Single-point CASSCF - Generate CAS orbitals
 
 ## References
 RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway.html](https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/rassi.html)
