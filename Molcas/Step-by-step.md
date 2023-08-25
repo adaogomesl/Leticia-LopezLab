@@ -78,15 +78,14 @@ rm -r $MOLCAS_PROJECT
 ## Analysis
 Check .log and .status should have ```Happy landing!```
 
-
-
+--- 
 # 2. Single-point CASSCF - Generate CAS
 
 ## References
 RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway.html](https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/rassi.html)
 
 ## Files necessary
-```.inp```,```.xyz```,```.sh``` and ```.StrOrb`` (ScfOrb  from previous step)
+```.inp```,```.xyz```,```.sh``` and ```.StrOrb``` (ScfOrb  from previous step)
 
 #### .inp example
 ```
@@ -108,4 +107,9 @@ RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway
  CIRoot=8 8 1
 ```
 
+## Analysis
+1. Check .log and .status should have ```Happy landing!```
+2. Open .rasscf.molden on ChemCraft to vizualize orbitals in the active space (Energy = 0)
+
+--- 
 
