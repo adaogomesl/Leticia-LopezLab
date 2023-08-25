@@ -1,7 +1,7 @@
 # 1. Single-point HF - Generate initial orbitals
 ## References
 GATEWAY: https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway.html
-SEWARD: https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/seward.html
+SEWARD: https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/seward.html    
 SCF: https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/scf.html
 
 
@@ -110,6 +110,8 @@ RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway
 ## Analysis
 1. Check .log and .status should have ```Happy landing!```
 2. Open .rasscf.molden on ChemCraft to vizualize orbitals in the active space (Energy = 0)
+3. 
+
 
 --- 
 
