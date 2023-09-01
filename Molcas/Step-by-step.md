@@ -145,7 +145,9 @@ RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway
 # 4. CASSCF
 ## Analysis
 1. Check .log and .status should have ```Happy landing!```
-2. Check if the orbitals in the active space still the same
+   
+2. Check if the orbitals in the active space are still the same
+
 3. Extract the following data by going to the end of ```.log``` by pressing ```SHIFT G``` and searching for the following keywords:
    
    a. Energies
