@@ -145,7 +145,7 @@ RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway
 
 --- 
 # 3. Optimization and Frequency 
-# 4. CASSCF
+# 4. CASSCF VEE
 ## Analysis
 1. Check .log and .status should have ```Happy landing!```
    
@@ -171,6 +171,6 @@ RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway
 
 
 
-# 5. CASPT2
+# 5. CASPT2 VEE
 
 
