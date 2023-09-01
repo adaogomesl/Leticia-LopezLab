@@ -141,4 +141,30 @@ RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway
 
 
 --- 
+# 3. Optimization and Frequency 
+# 4. CASSCF
+## Analysis
+1. Check .log and .status should have ```Happy landing!```
+2. Check if the orbitals in the active space still the same
+3. Extract the following data:
+   a. Energies
+   ```
+   ?RASSI
+   ```
+   b. Oscilator strength
+   ```
+   ?Dipole transition strengths
+   ```
+   c. Transitions
+   ```
+   Wave function printout
+   ```
+
+
+
+
+
+
+# 5. CASPT2
+
 
