@@ -144,7 +144,7 @@ python3 classify_product.py Prod.S0.xyz
 
    g. Copy paths to a file named ```index-S0```
 
-2. Extract population data
+2. Extract population data, ```.dat``` file generated
    ```
    python3 HOP-FSSH.py -x 03-pop
    ```
@@ -167,16 +167,13 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/work/lopez/Python-3.7.4/lib
 ```
 ![dbh-unsub-pop](https://github.com/adaogomesl/Leticia-LopezLab/assets/100699955/ac8a2797-5bb4-4e5f-aa79-b7e274ef02b2)
 
-The timestep of half life of S0 and S1 will be printed
-To compute the time constant, divide by 2
-
-
-
+The timestep of the half-life of S0 and S1 will be printed, to compute the time constant, divide by 2.
 
 
 ### Spaghetti Plots
+1. Extract geometrical parameters, ```.json```file created 
 ```
-python3 HOP-FSSH.py -x 04-
+python3 HOP-FSSH.py -x 04-geometricalpar
 ```
 
 
