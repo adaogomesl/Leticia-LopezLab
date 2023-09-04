@@ -119,6 +119,17 @@ python3 classify_product.py Prod.S0.xyz
 ```
 python3 HOP-FSSH.py -x 03-
 ```
+1. Create a plot showing the population with plot-state-pop-2d.py
+```
+export python="$PATH:/work/lopez/Python-3.7.4/lib"
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/work/lopez/Python-3.7.4/lib
+/work/lopez/Python-3.7.4/bin/python3 plot-state-pop-2d.py average-dbh-unsub.dat
+```
+
+
+
+
+
 ### Spaghetti Plots
 ```
 python3 HOP-FSSH.py -x 04-
