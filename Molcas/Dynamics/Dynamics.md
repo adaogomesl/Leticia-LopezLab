@@ -149,8 +149,21 @@ python3 classify_product.py Prod.S0.xyz
    python3 HOP-FSSH.py -x 03-pop
    ```
 
-   
-3. Create a plot showing the population with plot-state-pop-2d.py
+3. Edit the ```plot-state-pop-2d.py``` to the correct number of states
+   ```
+   #Format .dat file timestep, Ekin, Epot0-3, Etot0-3,Pop0-3
+#Population info will start at index  9
+p1=data[:,9]
+p2=data[:,10]
+p3=data[:,11]
+p4=data[:,12]
+p5=data[:,13]
+p6=data[:,13]
+p7=data[:,14]
+p8=data[:,15]
+   ```
+
+3. Create a plot showing the population with ```plot-state-pop-2d.py```
 ```
 export python="$PATH:/work/lopez/Python-3.7.4/lib"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/work/lopez/Python-3.7.4/lib
