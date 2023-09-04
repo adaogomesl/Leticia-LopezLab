@@ -175,6 +175,10 @@ The timestep of the half-life of S0 and S1 will be printed, to compute the time 
 ```
 python3 HOP-FSSH.py -x 04-geometricalpar
 ```
+2. Generate plots
+   ```
+python3 chart_v2.py
+``
 
 
 
