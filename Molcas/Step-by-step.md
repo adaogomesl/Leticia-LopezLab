@@ -192,7 +192,7 @@ RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway
 Scripts
 ```
 /work/lopez/share_from_Leticia/model-scripts/spectrum
-``
+```
 
 ## Submission
 
