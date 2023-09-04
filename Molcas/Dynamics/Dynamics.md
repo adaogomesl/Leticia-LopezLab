@@ -129,10 +129,28 @@ python3 classify_product.py Prod.S0.xyz
    ```
    
    b. Convert range to index using ```range2index.py```
-```
-python3 range2index.py
-```
-1. Create a plot showing the population with plot-state-pop-2d.py
+   ```
+   python3 range2index.py
+   ```
+
+   c. Copy the indexes to a file named ```states.txt```, it will be used on later steps
+   
+   e. Copy the indexes list to ```generatepathtoS0.py``` and update the path
+
+   f. Generate the paths:
+   ```
+   python3 generatepathtoS0.py
+   ```
+
+   g. Copy paths to a file named ```index-S0```
+
+2. Extract population data
+   ```
+   python3 HOP-FSSH.py -x 03-pop
+   ```
+
+   
+3. Create a plot showing the population with plot-state-pop-2d.py
 ```
 export python="$PATH:/work/lopez/Python-3.7.4/lib"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/work/lopez/Python-3.7.4/lib
