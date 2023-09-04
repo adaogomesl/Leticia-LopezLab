@@ -179,11 +179,12 @@ python3 HOP-FSSH.py -x 04-geometricalpar
    ```
    python3 chart_v2.py
    ```
+   
 <img width="894" alt="Screenshot 2023-09-04 at 10 16 40 AM" src="https://github.com/adaogomesl/Leticia-LopezLab/assets/100699955/818f25ec-afae-476d-9349-b336a53115f0">
   
 
 3. Generate 3D-plot
-   a. Edit the ```chart_v2_3D-byproduct.py```, to have the correct index for each product. To do that, I copied the index from the excel sheet with classified products and pasted on a browse to get rid of the formation. Using TextMate I replaced the spaced by ,.
+   a. Edit the ```chart_v2_3D-byproduct.py```, to have the correct index for each product. To do that, I copied the index from the Excel sheet with classified products and pasted it on a browse to get rid of the formation. Using TextMate I replaced the spaced by ,.
 
 
 
