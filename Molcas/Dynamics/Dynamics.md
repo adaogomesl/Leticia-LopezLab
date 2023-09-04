@@ -149,18 +149,14 @@ python3 classify_product.py Prod.S0.xyz
    python3 HOP-FSSH.py -x 03-pop
    ```
 
-3. Edit the ```plot-state-pop-2d.py``` to the correct number of states
+3. Edit the ```plot-state-pop-2d.py``` to the correct number of states. Example 4 states
    ```
    #Format .dat file timestep, Ekin, Epot0-3, Etot0-3,Pop0-3
-#Population info will start at index  9
-p1=data[:,9]
-p2=data[:,10]
-p3=data[:,11]
-p4=data[:,12]
-p5=data[:,13]
-p6=data[:,13]
-p7=data[:,14]
-p8=data[:,15]
+   #Population info will start at index  9
+   p1=data[:,9]
+   p2=data[:,10]
+   p3=data[:,11]
+   p4=data[:,12]
    ```
 
 3. Create a plot showing the population with ```plot-state-pop-2d.py```
@@ -169,6 +165,10 @@ export python="$PATH:/work/lopez/Python-3.7.4/lib"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/work/lopez/Python-3.7.4/lib
 /work/lopez/Python-3.7.4/bin/python3 plot-state-pop-2d.py average-dbh-unsub.dat
 ```
+![dbh-unsub-pop](https://github.com/adaogomesl/Leticia-LopezLab/assets/100699955/ac8a2797-5bb4-4e5f-aa79-b7e274ef02b2)
+
+The timestep of half life of S0 and S1 will be printed
+To compute the time constant, divide by 2
 
 
 
