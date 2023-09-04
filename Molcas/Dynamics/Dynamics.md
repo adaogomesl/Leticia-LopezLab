@@ -185,8 +185,13 @@ python3 HOP-FSSH.py -x 04-geometricalpar
 
 3. Generate 3D-plot
    a. Edit the ```chart_v2_3D-byproduct.py```, to have the correct index for each product. To do that, I copied the index from the Excel sheet with classified products and pasted it on a browse to get rid of the formation. Using TextMate I replaced the spaced by ,.
+   
    b. Also, change the energy by the energy obtained on the optimization ```RASSCF state energy```
 
+   c. Generate plot
+   ```
+   python3 chart_v2_3D-byproduct.py
+   ``` 
 
 
 
