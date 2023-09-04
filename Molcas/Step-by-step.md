@@ -145,6 +145,9 @@ RASSCF: [https://molcas.gitlab.io/OpenMolcas/sphinx/users.guide/programs/gateway
 
 --- 
 # 3. Optimization and Frequency 
+## References
+SLAPAF: https://www.molcas.org/documentation/manual/node115.html
+
 # 4. CASSCF VEE
 ## Analysis
 1. Check .log and .status should have ```Happy landing!```
@@ -216,5 +219,55 @@ python Gen-FSSH.py -x control
 6. Submit runall
 
 ## Analysis
+1. Use ```collector.sh``` to extract energies
+   ```
+   sbatch collector.sh
+   ```
+2. Check generated ```data.txt```, and replace blank oscillator to 0
+3. Plot spectrum
+   ```
+   python3 plot-abs.py
+   ````
+
 
 # 7. MEP
+## References
+SLAPAF: https://www.molcas.org/documentation/manual/node115.html
+
+## Files necessary
+```.inp```,```.xyz```,```.sh```, ```.StrOrb```
+
+#### .inp example
+```
+&GATEWAY
+ coord=$Project.xyz
+ basis=ano-s-vdzp
+ group=C1
+ RICD
+
+>> do while
+
+&SEWARD
+ doanalytic
+
+&RASSCF
+ FileOrb=$Project.StrOrb
+ Spin=1
+ Symmetry=1
+ Charge=0
+ NActel=8
+ Ras2=9
+ CIRoot=4 4 1
+ Rlxroot=2
+
+&SLAPAF
+ MEP-search
+ Iterations=200
+ THRShld= 0.0 5.0D-4
+
+>> end do
+```
+If small amount of geometries are generated, change MEPStep
+
+
+
