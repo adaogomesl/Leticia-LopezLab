@@ -103,11 +103,15 @@ python3 HOP-FSSH.py -x 01-diagnostic
 ```
 1. Create txt file with timesteps printed on the screen
 2. Make a histogram to get the distribution of the timestep
+   <img width="391" alt="Screenshot 2023-09-04 at 7 34 36 AM" src="https://github.com/adaogomesl/Leticia-LopezLab/assets/100699955/58159589-e995-42ec-8052-15941f4d4d8e">
+
    
 ### Determine Final State
 ```
-python3 HOP-FSSH.py -x 02-
+python3 HOP-FSSH.py -x 02-finalstates
 ```
+xyz files will be generated with the final structure for each state and also for the CI
+
 1. Classify final products using classify_product.py
 ```
 python3 classify_product.py Prod.S0.xyz
@@ -116,8 +120,14 @@ python3 classify_product.py Prod.S0.xyz
 
 
 ### State Population Analysis
+1. Create file ```index-S0``` that contains the path to the folders with trajectories that landed on S0
+   a. Create file ```range-S0.txt``` that contains the S0 range. Example file:
+   ```
+   1 3-9 11-16 18-26 28-35 37-45 47-82 84-88 90-106 108-117 120 121 123 124 126-134 136-138 140-152 154-179 181-184 186-193 195-214 216-231 233-235 237-245 247 248 250-266 268-328 330-338 340-347 349-355 357-365 367-369 371-376 378-409 411-453 455-465 467-472 474-476 480-493 495-500
+   ```
+   b. Convert range to index using ```range2index.py``
 ```
-python3 HOP-FSSH.py -x 03-
+python3 range2index.py
 ```
 1. Create a plot showing the population with plot-state-pop-2d.py
 ```
