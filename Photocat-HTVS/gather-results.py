@@ -3,7 +3,7 @@ import pandas as pd
 from openbabel import openbabel
 from rdkit import Chem
 
-### Create by: Leticia A. Gomes
+### Created by: Leticia A. Gomes
 ### Goal: Extract results from workflow and compute properties with sp correction
 ### Properties: VEE, Reduction and Oxidation Potential S0, S1 and T1
 ### Usage: python3 gather-results.py NAME-WORKFLOW
