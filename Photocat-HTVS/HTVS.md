@@ -15,7 +15,11 @@ https://github.com/kuriba/PyFlow
 ```
 
 # Best Performance model chemistries
-In the mentioned manuscript, we evaluated 147 model chemistries to predict the ground- and excited-state redox potentials for cyanoarenes, benzophenones, xanthene, and acridinium catalysts. Top-performing model chemistries were identified for predicting excited state oxidation and reduction potentials; N12-SX/6-311+G(d,p) and PBE0-D3BJ/6-311+G(d,p) are best for S1 potentials, and BHandH/6-31+G(d,p) and ωB97X/6-311+G(d,p) are best for T1 potentials.	
+In the mentioned manuscript, we evaluated 147 model chemistries to predict the ground- and excited-state redox potentials for cyanoarenes, benzophenones, xanthene, and acridinium catalysts. Top-performing model chemistries were identified for predicting excited state oxidation and reduction potentials; N12-SX/6-311+G(d,p) and PBE0-D3BJ/6-311+G(d,p) are best for S1 potentials, and BHandH/6-31+G(d,p) and ωB97X/6-311+G(d,p) are best for T1 potentials.
+
+# Workflow
+<img width="279" alt="image" src="https://github.com/adaogomesl/Leticia-LopezLab/assets/100699955/2e146a2a-2a06-4186-bc45-53b71bf93e62">
+
 
 --- 
 
