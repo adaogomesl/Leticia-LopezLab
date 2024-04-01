@@ -66,9 +66,6 @@ pyflow begin --do_not_track flag
 pyflow progress
    ```
 
-Scheme of performed jobs. Part 1 will be performed when generating molecules.
-<img width="1161" alt="workflow" src="https://github.com/Kimpton22/Tutorials-And-Guides/assets/100699955/0fe723f7-a8d0-492c-a831-ea51a9d07731">
-
 If need to change jobs type, edit the config file. Details on the keywords on PyFlow GitHub: https://github.com/kuriba/PyFlow
 
 ---
@@ -81,14 +78,16 @@ rm -r workflow*/*/*/failed/*.chk
 rm -r workflow*/*/*/failed/*.rwf
 ```
 
-## Extract results from Workflow using gather-results-withsp.py
-1. Activate pyflow
+# Extract Potentials
+#### 1. Copy extraction script to the same directory of the workflow directory - gather-results.py
 ```
-conda activate pyflow
+cp /work/lopez/share_from_Leticia/verde-pyflow/gather-results.py .
 ```
-2. Run extraction script
+
+#### 2. Extract the results - Replace workflow_name by the workflow directory name
+_Reminders: Request resources and have PyFlow environment sourced_
 ```
-python3 gather-results-withsp.py name-workflow
+python gather-results.py workflow_name
 ```
 
 ## Generate plots
@@ -119,17 +118,7 @@ python3 plot-scatter.py S1
 Resulted plot
 ![plot_S1](https://github.com/adaogomesl/Leticia-LopezLab/assets/100699955/91ecc5c8-9702-404a-8524-cc4ce6e13bf2)
 
-# Extract Potentials
-#### 1. Copy extraction script to the same directory of the workflow directory - gather-results.py
-```
-cp /work/lopez/share_from_Leticia/verde-pyflow/gather-results.py .
-```
 
-#### 2. Extract the results - Replace workflow_name by the workflow directory name
-_Reminders: Request resources and have PyFlow environment sourced_
-```
-python gather-results.py workflow_name
-```
 
 A CSV file will be generated with computed properties. Example of CSV is below:
 
