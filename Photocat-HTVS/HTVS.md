@@ -3,7 +3,7 @@
 #### Reference VERDE Paper: https://pubs.acs.org/doi/10.1021/acs.jpclett.9b02577
 This Github page contains instructions for installing Pyflow: 
 ```
-https://github.com/northeastern-rc/pyflow-installation-script
+https://github.com/kuriba/PyFlow
 ```
 
 ### Reminders:
