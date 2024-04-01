@@ -1,6 +1,10 @@
 # Benchmarking Density Functional Methods for Accurate Prediction of Ground and Excited State Reduction and Oxidation Potentials of Organic Photoredox Catalysts
 This page contains all the files necessary to run an automated workflow to predict ground and excited state potentials. Also, contains a script to extract all properties.
 
+All optimized structures output files are available at 
+```
+10.6084/m9.figshare.25234249.
+```
 
 
 # Installing Pyflow 
@@ -11,27 +15,9 @@ This Github page contains instructions for installing Pyflow:
 https://github.com/kuriba/PyFlow
 ```
 
-### Testing installation
+# Best Performance model chemistries
+In the mentioned manuscript, we evaluated 147 model chemistries to predict the ground- and excited-state redox potentials for cyanoarenes, benzophenones, xanthene, and acridinium catalysts. Top-performing model chemistries were identified for predicting excited state oxidation and reduction potentials; N12-SX/6-311+G(d,p) and PBE0-D3BJ/6-311+G(d,p) are best for S1 potentials, and BHandH/6-31+G(d,p) and ωB97X/6-311+G(d,p) are best for T1 potentials.	
 
-#### Test 1 - Creating molecules
-```
-python pymolgen-bench.py bench-MB 'CN(C1=CC=C(N=C2C=C([U])C(N(C)C)=CC2=[S+]3)C3=C1)C'
-```
-
-#### Test 2 - Set up Workflow
-```
-pyflow setup bench_round001 --config_file config-001.json
-```
-
-#### Test 3 - Submit Workflow
-```
-cp bench-MB/* bench_round001/unopt_pdbs/ && cd bench_round001/ && pyflow begin --do_not_track
-```
-
-#### Test 4 - Check progress
-```
-pyflow progress
-```
 --- 
 
 # Generating Molecules
