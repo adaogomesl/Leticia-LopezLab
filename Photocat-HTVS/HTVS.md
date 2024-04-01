@@ -129,3 +129,18 @@ python3 plot-scatter.py S1
 Resulted plot
 ![plot_S1](https://github.com/adaogomesl/Leticia-LopezLab/assets/100699955/91ecc5c8-9702-404a-8524-cc4ce6e13bf2)
 
+# Extract Potentials
+#### 1. Copy extraction script to the same directory of the workflow directory - gather-results.py
+```
+cp /work/lopez/share_from_Leticia/verde-pyflow/gather-results.py .
+```
+
+#### 2. Extract the results - Replace workflow_name by the workflow directory name
+_Reminders: Request resources and have PyFlow environment sourced_
+```
+python gather-results.py workflow_name
+```
+
+A CSV file will be generated with computed properties. Example of CSV is below:
+
+<img width="1018" alt="Screenshot 2024-01-17 at 12 51 52 PM" src="https://github.com/Kimpton22/Tutorials-And-Guides/assets/100699955/a4b7a7ef-856f-46a4-b440-de139220a057">
