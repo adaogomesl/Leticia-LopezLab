@@ -1,3 +1,8 @@
+#Benchmarking Density Functional Methods for Accurate Prediction of Ground and Excited State Reduction and Oxidation Potentials of Organic Photoredox Catalysts
+This page contains all the files necessary to run an automated workflow to predict ground and excited state potentials. Also, contains a script to extract all potentials, verti
+
+
+
 # Installing Pyflow 
 
 #### Reference VERDE Paper: https://pubs.acs.org/doi/10.1021/acs.jpclett.9b02577
