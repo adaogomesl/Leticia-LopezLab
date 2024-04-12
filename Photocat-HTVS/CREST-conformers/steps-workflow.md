@@ -5,7 +5,7 @@ for i in {10..21}; do mkdir $i; done
 2. Submit by using sbatch with commands, example
 cd /scratch/adaogomes.l/forsteven/workflow-Apr24/015_step1/01 && cp ../workflow-step1.py . && sbatch workflow-step1.py LZMYYVFMLBATPX-UHFFFAOYSA-N 'O=C(C(C(OC)=O)=C1C(OC)=O)C(C(OC)=O)=C(C(OC)=O)C1=O'
 
-3.Copy xyz files
+3. Copy xyz files
 cp ../0*/*.xyz .
 cp ../1*/*.xyz .
 cp ../2*/*.xyz .
