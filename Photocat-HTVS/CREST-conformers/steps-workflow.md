@@ -5,8 +5,9 @@ for i in {10..21}; do mkdir $i; done
 
 3. Generate SMILES, InchKey, ID and set CREST sbatch
 python pymolgen-id-CREST.py molecule_name smiles.txt
+	a. If want to change partition runall.sh, add after '''#!/bin/bash''': '''#SBATCH --partition=lopez''' 
 
-4. Copy xyz files
+5. Copy xyz files
 cp ../0*/*.xyz .
 cp ../1*/*.xyz .
 cp ../2*/*.xyz .
