@@ -12,7 +12,7 @@ for i in {10..21}; do mkdir $i; done
 
 	
 
-4. Copy xyz files: ```cp ../0*/*.xyz .```
+4. Copy xyz files: ```cp ../*/*.xyz .```
 
 
 4. Convert xyz to pdb
