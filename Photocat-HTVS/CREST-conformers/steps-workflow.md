@@ -17,7 +17,7 @@ for i in {10..21}; do mkdir $i; done
 
 4. Convert xyz to pdb
 	a. activate pyflow
-        b. Convert .xyz to .pdb: obabel *.xyz -O *.pdb
+        b. Convert .xyz to .pdb: ```obabel *.xyz -O *.pdb```
 
 6. Create folder just with pdb
 
