@@ -12,14 +12,8 @@ for i in {10..21}; do mkdir $i; done
 
 	
 
-4. Copy xyz files
-cp ../0*/*.xyz .
+4. Copy xyz files: ```cp ../0*/*.xyz .```
 
-cp ../1*/*.xyz .
-
-cp ../2*/*.xyz .
-
-cp ../3*/*.xyz .
 
 4. Convert xyz to pdb
 	a. activate pyflow
