@@ -12,7 +12,10 @@ for i in {10..21}; do mkdir $i; done
 
 	
 
-4. Copy xyz files: ```cp ../*/*.xyz .```
+4.Check if all conf_search folders generated an XYZ: ```for dir in  */; do [[ $(ls "$dir"*.xyz 2> /dev/null) ]] || echo "$dir has no .xyz files"; done```
+
+
+5. Copy xyz files: ```cp ../*/*.xyz .```
 
 
 4. Convert xyz to pdb
