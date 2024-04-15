@@ -12,15 +12,24 @@ for i in {10..21}; do mkdir $i; done
 
 	
 
-4.Check if all conf_search folders generated an XYZ: ```for dir in  */; do [[ $(ls "$dir"*.xyz 2> /dev/null) ]] || echo "$dir has no .xyz files"; done```
+4.Check if all conf_search folders generated an XYZ: 
+```for dir in  */; do [[ $(ls "$dir"*.xyz 2> /dev/null) ]] || echo "$dir has no .xyz files"; done```
+Specific folders
+```for i in $(seq 1 1000); do dir="${i}/"; if [ -d "$dir" ]; then files=$(ls "$dir"*.xyz 2> /dev/null); if [[ -z $files ]]; then echo "$dir has no .xyz files"; fi; else echo "$dir does not exist"; fi; done```
 
 
 5. Copy xyz files: ```cp ../*/*.xyz .```
+Specific to some folders
+```for i in {1..1000}; do cp "../$i/"*.xyz .; done```
 
+6. number of xyz files
+```ls -1p | grep -v / | wc -l```
 
-4. Convert xyz to pdb
+7. Convert xyz to pdb
 	a. activate pyflow
         b. Convert .xyz to .pdb: ```obabel *.xyz -O *.pdb```
+
+
 
 6. Create folder just with pdb ```mv ../xyz/*pdb .```
 
