@@ -1,2 +1,2 @@
 # Leticia-LopezLab
-Protocols and scripts used on Lopez Lab by Leticia Gomes
+Protocols and scripts created by Leticia Gomes on Lopez Lab 
