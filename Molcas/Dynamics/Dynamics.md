@@ -1,9 +1,6 @@
 ## Submission
 ### Model scripts
-```
-/work/lopez/share_from_Leticia/model-scripts/dynamics
-```
-
+All files mentioned on this documentation are uploaded on 
 
 ### Necessary files
 *From Optimization:*
