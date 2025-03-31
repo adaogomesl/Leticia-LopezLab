@@ -1,0 +1,45 @@
+&CONTROL
+title         dbh
+ml_ncpu       20
+jobtype       train
+qm            nn
+
+&NN
+train_data  data-shuffled.json
+silent      1
+train_mode  training
+nn_eg_type  2
+nsplits 10
+nn_soc_type 0
+
+&EG
+depth          6
+nn_size        700
+batch_size     64
+reg_l1         1e-8
+reg_l2         1e-9
+activ          leaky_softplus
+activ_alpha    0.03
+loss_weights   5 1
+use_reg_activ  l2
+use_reg_weight l2
+epo            1000
+epostep        10
+learning_rate_step   1e-3 1e-4 1e-5
+epoch_step_reduction 600  300  100
+
+&EG2
+depth          7
+nn_size        800
+batch_size     64
+reg_l1         1e-8
+reg_l2         1e-8
+activ          leaky_softplus
+activ_alpha    0.03
+loss_weights   5 1
+use_reg_activ  l2
+use_reg_weight l2
+epo            1000
+epostep        10
+learning_rate_step   1e-3 1e-4 1e-5
+epoch_step_reduction 600  300  100
