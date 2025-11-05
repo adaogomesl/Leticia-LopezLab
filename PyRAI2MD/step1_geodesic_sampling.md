@@ -1,4 +1,4 @@
-# Case Study 1: Geodesic Interpolation
+# Step 1: Geodesic Interpolation
 This step will generate the initial training data set for us to use with PyRAI2MD to conduct machine learning - non-adiabatic molecular dynamics. 
 
 NOTE: You need to do the following steps TWICE, one is for the reactant -> a minimum energy conical intersection (MECI), and then another from MECI -> product. Each of these will have their folders. 
