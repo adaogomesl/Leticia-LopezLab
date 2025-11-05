@@ -3,8 +3,12 @@ This step will generate the initial training data set for us to use with PyRAI2M
 
 NOTE: You need to do the following steps TWICE, one is for the reactant -> a minimum energy conical intersection (MECI), and then another from MECI -> product. Each of these will have their folders. 
 
-1. `first_part` -> contains the reactant -> MECI geometries
-2. `second_part` -> contains the MECI -> product geometries
+Geometry info:
+MECI - Partially Inverted
+Product
+
+1. `react_meci` -> contains the reactant -> MECI geometries
+2. `meci_product` -> contains the MECI -> product geometries
 
 Lets start with the first_part folder (i.e. reactant -> MECI): 
 
